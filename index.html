@@ -1,0 +1,896 @@
+<!doctype html>
+<html lang="et">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="pics/logo.png">
+     <title  data-i18n="title">Koodiorav | Kodulehed ja veebiarendus ettevõtetele</title>
+    <meta name="description"
+content="Kaasaegsed ja kiired kodulehed ettevõtetele, startupidele ja kasvavatele brändidele. Veebilahendused, mis aitavad kasvatada nähtavust ja tuua rohkem päringuid.">
+      <meta name="robots" content="index, follow">
+      <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="author" content="Koodiorav">
+      <link rel="canonical" href="https://koodiorav.ee/">
+<meta property="og:title" content="KoodiOrav | Kodulehed ja veebiarendus ettevõtetele">
+<meta property="og:description" content="Modernsed ja tulemustele suunatud veebilahendused ettevõtetele ja startupidele.">
+<meta property="og:image" content="https://koodiorav.ee/pics/new-wb.png">
+<meta property="og:url" content="https://koodiorav.ee/">
+<meta property="og:type" content="website">  
+<meta property="og:locale" content="et_EE">
+<meta property="og:site_name" content="Koodiorav">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Koodiorav | Kodulehed ja veebiarendus ettevõtetele">
+<meta name="twitter:description" content="Modernsed ja tulemustele suunatud veebilahendused ettevõtetele ja startupidele.">
+<meta name="twitter:image" content="https://koodiorav.ee/pics/new-wb.png">  
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="apple-touch-icon" href="pics/logo.png">
+    
+  </head>
+  <body>
+        <header class="navbar">
+      <div class="logo">
+        <h1 class="title"><a href="index.html">koodiorav.ee</a></h1>
+        <button class="langbtn" onclick="setLanguage('et')">EST</button>
+<button class="langbtn" onclick="setLanguage('en')">ENG</button>
+</div>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+        <nav class="nav-links">
+          <p class="close">X</p>
+            <a href="#lahendused" data-i18n="solutions">Lahendused</a>
+            <a href="#valimeid"  data-i18n="worths">Väärtused</a>
+            <a href="#protsess" data-i18n="process">Protsess</a>
+            <a href="#kontakt" data-i18n="contact">Kontakt</a>
+
+      
+
+            <div class="social">
+              <a href="https://www.instagram.com/koodiorav/"><svg class="insta" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a>
+              <a href="https://www.facebook.com/profile.php?id=61578982811017"
+                  target="_blank"><svg class="fb" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Messenger</title><path d="M12 0C5.24 0 0 4.952 0 11.64c0 3.499 1.434 6.521 3.769 8.61a.96.96 0 0 1 .323.683l.065 2.135a.96.96 0 0 0 1.347.85l2.381-1.053a.96.96 0 0 1 .641-.046A13 13 0 0 0 12 23.28c6.76 0 12-4.952 12-11.64S18.76 0 12 0m6.806 7.44c.522-.03.971.567.63 1.094l-4.178 6.457a.707.707 0 0 1-.977.208l-3.87-2.504a.44.44 0 0 0-.49.007l-4.363 3.01c-.637.438-1.415-.317-.995-.966l4.179-6.457a.706.706 0 0 1 .977-.21l3.87 2.505c.15.097.344.094.491-.007l4.362-3.008a.7.7 0 0 1 .364-.13"/></svg></a>
+              <a href="mailto:info.koodiorav@gmail.com?subject=Veebilahenduse%20hinnapäring&body=Tere%2C%0D%0A%0D%0ASoovin%20küsida%20hinnapakkumist%20veebilahenduse%20ja%20teenuste%20kohta.%20Mind%20huvitavad%20järgmised%20lahendused%3A%0D%0A%0D%0A-%20%0D%0A-%20%0D%0A-%20%0D%0A%0D%0APalun%20andke%20teada%2C%20millist%20lisainfot%20vajate%20pakkumise%20koostamiseks%20ning%20milline%20võiks%20olla%20tööde%20ajakava.%0D%0A%0D%0AParimate%20soovidega">
+  <svg class="gmail" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <title>Gmail</title>
+    <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+  </svg>
+</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-cont" id="hero">
+      <main class="hero">
+        <img src="pics/hero_web.png" alt="LoadingWeb"  loading="lazy"/>
+        <h1 class="hero-title" >
+          <span data-i18n="hero-txt">Kodulehed ja veebilahendused, mis </span> <span class="hero-span" data-i18n="hero-txt-2">toovad päringuid</span>.
+        </h1>
+        <p class="hero-subtxt">
+          
+       <span data-i18n="hero-sub">Aitame ettevõtetel saada</span>
+          <span class="hero-span" data-i18n="hero-sub-span">rohkem kliente</span> <span data-i18n="hero-sub-span-2">läbi kiirete ja</span>
+          <span class="hero-span" data-i18n="hero-sub-span-3">läbimõeldud</span> <span data-i18n="hero-sbu-span-4">veebilehtede</span>
+        </p>
+        <div class="hero-cta">
+  <a
+    class="hero-cta-btn"
+    href="mailto:info.koodiorav@gmail.com"
+    data-i18n="hero-offer"
+  >
+    Küsi pakkumist
+  </a>
+</div>
+        <div class="hero-trust">
+          <div data-i18n="hero-trust-txt">✔ Vastame 24h jooksul</div>
+          <div data-i18n="hero-trust-txt-2">✔ Esmane konsultatsioon tasuta</div>
+          <div data-i18n="hero-trust-txt-3">✔ Hinnapakkumine ilma kohustuseta</div>
+        </div>
+      </main>
+    </section>
+
+    <section class="lahendused-cont" id="lahendused">
+      <h2 class="lahendused-title" data-i18n="popular-txt">Populaarsed lahendused</h2>
+
+            <div class="lahendused-kaart-grid">
+          <div class="lahendused-kaart">
+            <div class="title-svg">
+<svg class="page" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="gold" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe-icon lucide-globe"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          <h3 class="lahendused-second-title" data-i18n="single-pager">Kodulehed</h3>
+          </div>
+            <p class="lahendused-sub">Kaasaegsed ja kiired veebilehed ettevõtetele.</p>
+
+            <hr>
+            <ul>
+              <li class="lehed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+  <path d="M16.0303 10.0303C16.3232 9.73744 16.3232 9.26256 16.0303 8.96967C15.7374 8.67678 15.2626 8.67678 14.9697 8.96967L10.5 13.4393L9.03033 11.9697C8.73744 11.6768 8.26256 11.6768 7.96967 11.9697C7.67678 12.2626 7.67678 12.7374 7.96967 13.0303L9.96967 15.0303C10.2626 15.3232 10.7374 15.3232 11.0303 15.0303L16.0303 10.0303Z" fill="currentColor"></path>
+  
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75C17.1086 2.75 21.25 6.89137 21.25 12C21.25 17.1086 17.1086 21.25 12 21.25C6.89137 21.25 2.75 17.1086 2.75 12Z" fill="currentColor"></path>
+</svg>Ühe või mitmeleheküljelised</li>
+              <li class="lehed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+  <path d="M16.0303 10.0303C16.3232 9.73744 16.3232 9.26256 16.0303 8.96967C15.7374 8.67678 15.2626 8.67678 14.9697 8.96967L10.5 13.4393L9.03033 11.9697C8.73744 11.6768 8.26256 11.6768 7.96967 11.9697C7.67678 12.2626 7.67678 12.7374 7.96967 13.0303L9.96967 15.0303C10.2626 15.3232 10.7374 15.3232 11.0303 15.0303L16.0303 10.0303Z" fill="currentColor"></path>
+  
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75C17.1086 2.75 21.25 6.89137 21.25 12C21.25 17.1086 17.1086 21.25 12 21.25C6.89137 21.25 2.75 17.1086 2.75 12Z" fill="currentColor"></path>
+</svg> SEO ja Google leitavus</li>
+              <li class="lehed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+  <path d="M16.0303 10.0303C16.3232 9.73744 16.3232 9.26256 16.0303 8.96967C15.7374 8.67678 15.2626 8.67678 14.9697 8.96967L10.5 13.4393L9.03033 11.9697C8.73744 11.6768 8.26256 11.6768 7.96967 11.9697C7.67678 12.2626 7.67678 12.7374 7.96967 13.0303L9.96967 15.0303C10.2626 15.3232 10.7374 15.3232 11.0303 15.0303L16.0303 10.0303Z" fill="currentColor"></path>
+  
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75C17.1086 2.75 21.25 6.89137 21.25 12C21.25 17.1086 17.1086 21.25 12 21.25C6.89137 21.25 2.75 17.1086 2.75 12Z" fill="currentColor"></path>
+</svg> Mobiili ja kasutaja sõbralik</li>
+            </ul>
+            </div>
+
+            <div class="lahendused-kaart">
+              <div class="title-svg">
+              <svg class="bronn" viewBox="0 0 24 24" fill="gold" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M17 14C17.5523 14 18 13.5523 18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13C16 13.5523 16.4477 14 17 14Z" fill="gold"></path> <path d="M17 18C17.5523 18 18 17.5523 18 17C18 16.4477 17.5523 16 17 16C16.4477 16 16 16.4477 16 17C16 17.5523 16.4477 18 17 18Z" fill="gold"></path> <path d="M13 13C13 13.5523 12.5523 14 12 14C11.4477 14 11 13.5523 11 13C11 12.4477 11.4477 12 12 12C12.5523 12 13 12.4477 13 13Z" fill="gold"></path> <path d="M13 17C13 17.5523 12.5523 18 12 18C11.4477 18 11 17.5523 11 17C11 16.4477 11.4477 16 12 16C12.5523 16 13 16.4477 13 17Z" fill="gold"></path> <path d="M7 14C7.55229 14 8 13.5523 8 13C8 12.4477 7.55229 12 7 12C6.44772 12 6 12.4477 6 13C6 13.5523 6.44772 14 7 14Z" fill="gold"></path> <path d="M7 18C7.55229 18 8 17.5523 8 17C8 16.4477 7.55229 16 7 16C6.44772 16 6 16.4477 6 17C6 17.5523 6.44772 18 7 18Z" fill="gold"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M7 1.75C7.41421 1.75 7.75 2.08579 7.75 2.5V3.26272C8.412 3.24999 9.14133 3.24999 9.94346 3.25H14.0564C14.8586 3.24999 15.588 3.24999 16.25 3.26272V2.5C16.25 2.08579 16.5858 1.75 17 1.75C17.4142 1.75 17.75 2.08579 17.75 2.5V3.32709C18.0099 3.34691 18.2561 3.37182 18.489 3.40313C19.6614 3.56076 20.6104 3.89288 21.3588 4.64124C22.1071 5.38961 22.4392 6.33855 22.5969 7.51098C22.75 8.65018 22.75 10.1058 22.75 11.9435V14.0564C22.75 15.8941 22.75 17.3498 22.5969 18.489C22.4392 19.6614 22.1071 20.6104 21.3588 21.3588C20.6104 22.1071 19.6614 22.4392 18.489 22.5969C17.3498 22.75 15.8942 22.75 14.0565 22.75H9.94359C8.10585 22.75 6.65018 22.75 5.51098 22.5969C4.33856 22.4392 3.38961 22.1071 2.64124 21.3588C1.89288 20.6104 1.56076 19.6614 1.40314 18.489C1.24997 17.3498 1.24998 15.8942 1.25 14.0564V11.9436C1.24998 10.1058 1.24997 8.65019 1.40314 7.51098C1.56076 6.33855 1.89288 5.38961 2.64124 4.64124C3.38961 3.89288 4.33856 3.56076 5.51098 3.40313C5.7439 3.37182 5.99006 3.34691 6.25 3.32709V2.5C6.25 2.08579 6.58579 1.75 7 1.75ZM5.71085 4.88976C4.70476 5.02502 4.12511 5.27869 3.7019 5.7019C3.27869 6.12511 3.02502 6.70476 2.88976 7.71085C2.86685 7.88123 2.8477 8.06061 2.83168 8.25H21.1683C21.1523 8.06061 21.1331 7.88124 21.1102 7.71085C20.975 6.70476 20.7213 6.12511 20.2981 5.7019C19.8749 5.27869 19.2952 5.02502 18.2892 4.88976C17.2615 4.75159 15.9068 4.75 14 4.75H10C8.09318 4.75 6.73851 4.75159 5.71085 4.88976ZM2.75 12C2.75 11.146 2.75032 10.4027 2.76309 9.75H21.2369C21.2497 10.4027 21.25 11.146 21.25 12V14C21.25 15.9068 21.2484 17.2615 21.1102 18.2892C20.975 19.2952 20.7213 19.8749 20.2981 20.2981C19.8749 20.7213 19.2952 20.975 18.2892 21.1102C17.2615 21.2484 15.9068 21.25 14 21.25H10C8.09318 21.25 6.73851 21.2484 5.71085 21.1102C4.70476 20.975 4.12511 20.7213 3.7019 20.2981C3.27869 19.8749 3.02502 19.2952 2.88976 18.2892C2.75159 17.2615 2.75 15.9068 2.75 14V12Z" fill="gold"></path> </g></svg>
+           <h3 class="lahendused-second-title" data-i18n="reservation">Broneerimissüsteemid</h3>
+</div>
+
+
+            <p class="lahendused-sub">Veebilahendused automaatseks aja- ja teenusebroneerimiseks.</p>
+
+            <hr>
+
+            <ul>
+              <li class="lehed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+  <path d="M16.0303 10.0303C16.3232 9.73744 16.3232 9.26256 16.0303 8.96967C15.7374 8.67678 15.2626 8.67678 14.9697 8.96967L10.5 13.4393L9.03033 11.9697C8.73744 11.6768 8.26256 11.6768 7.96967 11.9697C7.67678 12.2626 7.67678 12.7374 7.96967 13.0303L9.96967 15.0303C10.2626 15.3232 10.7374 15.3232 11.0303 15.0303L16.0303 10.0303Z" fill="currentColor"></path>
+  
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75C17.1086 2.75 21.25 6.89137 21.25 12C21.25 17.1086 17.1086 21.25 12 21.25C6.89137 21.25 2.75 17.1086 2.75 12Z" fill="currentColor"></path>
+</svg> Broneerimine 24/7</li>
+              <li class="lehed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+  <path d="M16.0303 10.0303C16.3232 9.73744 16.3232 9.26256 16.0303 8.96967C15.7374 8.67678 15.2626 8.67678 14.9697 8.96967L10.5 13.4393L9.03033 11.9697C8.73744 11.6768 8.26256 11.6768 7.96967 11.9697C7.67678 12.2626 7.67678 12.7374 7.96967 13.0303L9.96967 15.0303C10.2626 15.3232 10.7374 15.3232 11.0303 15.0303L16.0303 10.0303Z" fill="currentColor"></path>
+  
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75C17.1086 2.75 21.25 6.89137 21.25 12C21.25 17.1086 17.1086 21.25 12 21.25C6.89137 21.25 2.75 17.1086 2.75 12Z" fill="currentColor"></path>
+</svg> Automaatsed meeldetuletused</li>
+              <li class="lehed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+  <path d="M16.0303 10.0303C16.3232 9.73744 16.3232 9.26256 16.0303 8.96967C15.7374 8.67678 15.2626 8.67678 14.9697 8.96967L10.5 13.4393L9.03033 11.9697C8.73744 11.6768 8.26256 11.6768 7.96967 11.9697C7.67678 12.2626 7.67678 12.7374 7.96967 13.0303L9.96967 15.0303C10.2626 15.3232 10.7374 15.3232 11.0303 15.0303L16.0303 10.0303Z" fill="currentColor"></path>
+  
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75C17.1086 2.75 21.25 6.89137 21.25 12C21.25 17.1086 17.1086 21.25 12 21.25C6.89137 21.25 2.75 17.1086 2.75 12Z" fill="currentColor"></path>
+</svg> Väheneb info käsitsi käitlemine</li>
+            </ul>
+          </div>
+            <div class="lahendused-kaart">
+              <div class="title-svg">
+              <svg class="shop" fill="gold" height="200px" width="200px" version="1.1" id="XMLID_269_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="shop-cart"> <g> <circle cx="9" cy="21" r="2"></circle> </g> <g> <circle cx="19" cy="21" r="2"></circle> </g> <g> <path d="M21,18H7.2l-4-16H0V0h4.8l0.8,3H24l-3.2,11H8.3l0.5,2H21V18z M7.8,12h11.5l2-7H6L7.8,12z"></path> </g> </g> </g></svg>
+          <h3 class="lahendused-second-title" data-i18n="shop">E-poed</h3>
+          </div>
+            <p class="lahendused-sub">
+              Müügile suunatud e-poed mugava halduse ja makselahendustega.</p>
+
+            <hr>
+
+            <ul>
+              <li class="lehed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+  <path d="M16.0303 10.0303C16.3232 9.73744 16.3232 9.26256 16.0303 8.96967C15.7374 8.67678 15.2626 8.67678 14.9697 8.96967L10.5 13.4393L9.03033 11.9697C8.73744 11.6768 8.26256 11.6768 7.96967 11.9697C7.67678 12.2626 7.67678 12.7374 7.96967 13.0303L9.96967 15.0303C10.2626 15.3232 10.7374 15.3232 11.0303 15.0303L16.0303 10.0303Z" fill="currentColor"></path>
+  
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75C17.1086 2.75 21.25 6.89137 21.25 12C21.25 17.1086 17.1086 21.25 12 21.25C6.89137 21.25 2.75 17.1086 2.75 12Z" fill="currentColor"></path>
+</svg> Toodete ja tellimusti haldamine</li>
+              <li class="lehed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+  <path d="M16.0303 10.0303C16.3232 9.73744 16.3232 9.26256 16.0303 8.96967C15.7374 8.67678 15.2626 8.67678 14.9697 8.96967L10.5 13.4393L9.03033 11.9697C8.73744 11.6768 8.26256 11.6768 7.96967 11.9697C7.67678 12.2626 7.67678 12.7374 7.96967 13.0303L9.96967 15.0303C10.2626 15.3232 10.7374 15.3232 11.0303 15.0303L16.0303 10.0303Z" fill="currentColor"></path>
+  
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75C17.1086 2.75 21.25 6.89137 21.25 12C21.25 17.1086 17.1086 21.25 12 21.25C6.89137 21.25 2.75 17.1086 2.75 12Z" fill="currentColor"></path>
+</svg> Laoseisu kontroll</li>
+              <li class="lehed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+  <path d="M16.0303 10.0303C16.3232 9.73744 16.3232 9.26256 16.0303 8.96967C15.7374 8.67678 15.2626 8.67678 14.9697 8.96967L10.5 13.4393L9.03033 11.9697C8.73744 11.6768 8.26256 11.6768 7.96967 11.9697C7.67678 12.2626 7.67678 12.7374 7.96967 13.0303L9.96967 15.0303C10.2626 15.3232 10.7374 15.3232 11.0303 15.0303L16.0303 10.0303Z" fill="currentColor"></path>
+  
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75C17.1086 2.75 21.25 6.89137 21.25 12C21.25 17.1086 17.1086 21.25 12 21.25C6.89137 21.25 2.75 17.1086 2.75 12Z" fill="currentColor"></path>
+</svg> Kiire ja lihtne müük</li>
+            </ul>
+            </div>
+            </div>
+</div>
+    </section>
+
+  <section class="lisa-cont">
+  <div class="lisa-cont-cont">
+
+    <h2 data-i18n="also">Pakume lisaks ka</h2>
+
+    <div class="lisa-kaart-cont">
+
+      <div class="lisa-kaart">
+        <h3 data-i18n="content">🌐 Sisu- ja turunduslehed</h3>
+        <ul>
+          <li data-i18n="product">Tootelehed</li>
+          <li data-i18n="landing">Maandumislehed</li>
+          <li data-i18n="campaign">Kampaanialehed</li>
+        </ul>
+      </div>
+
+      <div class="lisa-kaart">
+        <h3 data-i18n="apps">⚙️ Rakendused ja automatiseerimine</h3>
+        <ul>
+          <li data-i18n="ai-solution">AI lahendused</li>
+          <li data-i18n="web-app">Veebirakendused</li>
+          <li data-i18n="mobile-app">Mobiilirakendused</li>
+          <li data-i18n="automated">Automatiseeritud tööriistad</li>
+        </ul>
+      </div>
+
+      <div class="lisa-kaart">
+        <h3 data-i18n="optimization">📈 SEO ja optimeerimine</h3>
+        <ul>
+          <li data-i18n="seo-optimization">SEO optimeerimine</li>
+          <li data-i18n="technical">Tehniline audit</li>
+          <li data-i18n="google-search">Google Search Console</li>
+        </ul>
+      </div>
+
+      <div class="lisa-kaart">
+        <h3 data-i18n="design">🎨 Disain</h3>
+        <ul>
+          <li data-i18n="ui-ux">UX/UI disain</li>
+          <li data-i18n="logos">Logod</li>
+          <li data-i18n="business-cards">Visiitkaardid</li>
+          <li data-i18n="brochures">Brošüürid</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+    <section class="valimeid" id="valimeid">
+      <h2 data-i18n="choose-us">Miks valida meid?</h2>
+
+      <ul class="valimeid-wrapper">
+        <li class="valimeid-kaardid">
+          <div class="valimeid-ikoon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-goal-icon lucide-goal"
+            >
+              <path d="M12 13V2l8 4-8 4" />
+              <path d="M20.561 10.222a9 9 0 1 1-12.55-5.29" />
+              <path d="M8.002 9.997a5 5 0 1 0 8.9 2.02" />
+            </svg>
+          </div>
+          <div class="sisu">
+            <h3 data-i18n="results">Tulemus esikohal</h3>
+            <p data-i18n="results-sub">
+              Loome veebilehti, mis on ehitatud päringute ja müügi toomiseks -
+              mitte lihtsalt ilusaks olemiseks.
+            </p>
+          </div>
+        </li>
+
+        <li class="valimeid-kaardid">
+          <div class="valimeid-ikoon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-zap-icon lucide-zap"
+            >
+              <path
+                d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
+              />
+            </svg>
+          </div>
+          <div class="sisu">
+            <h3 data-i18n="fast">Kiire ja paindlik</h3>
+            <p data-i18n="fast-sub">
+              Valmime kokkulepitud ajaks. Reageerime kiiresti ja teeme koostöö
+              lihtsaks.
+            </p>
+          </div>
+        </li>
+
+        <li class="valimeid-kaardid">
+          <div class="valimeid-ikoon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-shield-check-icon lucide-shield-check"
+            >
+              <path
+                d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+              />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+          </div>
+          <div class="sisu">
+            <h3 data-i18n="trust">Usaldusväärne</h3>
+            <p data-i18n="trust-sub">
+              Selge kommunikatsioon, läbipaistev protsess ja kvaliteetne töö.
+            </p>
+          </div>
+        </li>
+
+        <li class="valimeid-kaardid">
+          <div class="valimeid-ikoon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="-2 0 28 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-chart-line-icon lucide-chart-line"
+            >
+              <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+              <path d="m19 9-5 5-4-4-3 3" />
+            </svg>
+          </div>
+          <div class="sisu">
+            <h3 data-i18n="seo">SEO ja jõudlus</h3>
+            <p data-i18n="seo-sub">
+              Tehniliselt korras, kiire ja otsingumootoritele optimeeritud -
+              rohkem nähtavust, rohkem külastajaid.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="protsess" id="protsess">
+      <h2 data-i18n="proccess">Kuidas koostöö käib?</h2>
+
+      <ul class="protsess-wrapper">
+        <li class="protsess-kaardid">
+          <p class="number">&#9312;</p>
+          <div class="protsess-ikoon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="-3 0 30 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-message-square-more-icon lucide-message-square-more"
+            >
+              <path
+                d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"
+              />
+              <path d="M12 11h.01" />
+              <path d="M16 11h.01" />
+              <path d="M8 11h.01" />
+            </svg>
+          </div>
+          <h3 data-i18n="proccess-title">Selgitame eesmärgi</h3>
+          <p data-i18n="proccess-sub">Selgitame välja, mida sul päriselt vaja on</p>
+        </li>
+
+        <li class="protsess-kaardid">
+          <p class="number">&#9313;</p>
+          <div class="protsess-ikoon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="-3 0 30 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-pencil-icon lucide-pencil"
+            >
+              <path
+                d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"
+              />
+              <path d="m15 5 4 4" />
+            </svg>
+          </div>
+          <h3 data-i18n="proccess-title-2">Planeerime ja disainime</h3>
+          <p data-i18n="proccess-sub-2">
+            Paneme paika selge plaani ja visuaali, mis toetab sinu eesmärke.
+          </p>
+        </li>
+
+        <li class="protsess-kaardid">
+          <p class="number">&#9314;</p>
+          <div class="protsess-ikoon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-code-xml-icon lucide-code-xml"
+            >
+              <path d="m18 16 4-4-4-4" />
+              <path d="m6 8-4 4 4 4" />
+              <path d="m14.5 4-5 16" />
+            </svg>
+          </div>
+          <h3 data-i18n="proccess-title-3">Arendame</h3>
+          <p data-i18n="proccess-sub-3">Loome kiire ja toimiva lahenduse</p>
+        </li>
+
+        <li class="protsess-kaardid">
+          <p class="number">&#9315;</p>
+          <div class="protsess-ikoon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="-2 0 30 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-rocket-icon lucide-rocket"
+            >
+              <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+              <path
+                d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"
+              />
+              <path
+                d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"
+              />
+              <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05" />
+            </svg>
+          </div>
+          <h3 data-i18n="proccess-title-4">Käivitame ja toetame</h3>
+          <p data-i18n="proccess-sub-4">Paneme lehe tööle ja aitame ka pärast valmimist</p>
+        </li>
+      </ul>
+    </section>
+
+<section class="projektid">
+
+  <div class="projekti-grid">
+
+  
+    <div class="slider slider-js">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+            <a href="https://infokoodiorav-prog.github.io/K1-PRO---Product/" target="_blank" class="slide">
+          <img src="pics/Nexora.png" alt="Nexora tootelehe veebidisain" />
+
+          <div class="overlay">
+      <h3>Nexora</h3>
+      <p data-i18n="product-page">Tooteleht</p>
+      <span data-i18n="open-project">Ava leht ↗</span>
+    </div>
+
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+            <a href="https://infokoodiorav-prog.github.io/VormX/" target="_blank" class="slide">
+          <img src="pics/VormX.png" />
+
+          <div class="overlay">
+      <h3>VormX</h3>
+      <p data-i18n="landing-page">Maandumisleht</p>
+      <span data-i18n="open-project">Ava leht ↗</span>
+    </div>
+
+          </a>
+        </div>
+
+         <div class="swiper-slide">
+            <a href="https://infokoodiorav-prog.github.io/IronCore_campaign/" target="_blank" class="slide">
+          <img src="pics/IronCore.png" />
+
+          <div class="overlay">
+      <h3>IronCore</h3>
+      <p data-i18n="campaign-page">Kampaanialeht</p>
+      <span data-i18n="open-project">Ava leht ↗</span>
+    </div>
+
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+            <a href="https://infokoodiorav-prog.github.io/DentEst_HambaKliinik/" target="_blank" class="slide">
+          <img src="pics/Dent_Est.png" />
+
+          <div class="overlay">
+      <h3 data-i18n="dentest-clinic">Dentest hambakliinik</h3>
+      <p data-i18n="booking-system">Broneerimissüsteem</p>
+      <span data-i18n="open-project">Ava leht ↗</span>
+    </div>
+
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+            <a href="https://evegantnedisain.ee" target="_blank" class="slide">
+          <img src="pics/eve.png" />
+
+          <div class="overlay">
+      <h3>Evegantne Disain</h3>
+      <p data-i18n="business">Äriveeb</p>
+      <span data-i18n="open-project">Ava leht ↗</span>
+    </div>
+
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+            <a href="https://infokoodiorav-prog.github.io/VormX/" target="_blank" class="slide">
+          <img src="pics/pesula.png" />
+
+          <div class="overlay">
+      <h3>KülaPesula — Broneerimis- ja e-poe süsteem</h3>
+      <p>UI · Kampaania · Lead generation</p>
+      <span>Ava leht ↗</span>
+    </div>
+
+          </a>
+        </div>
+
+         <div class="swiper-slide">
+            <a href="https://infokoodiorav-prog.github.io/TextileService/" target="_blank" class="slide">
+          <img src="pics/Textile_Service.png" />
+
+          <div class="overlay">
+      <h3>Textile Service</h3>
+      <p data-i18n="automated-customer">Automaatne klienditugi</p>
+      <span data-i18n="open-project">Ava leht ↗</span>
+    </div>
+
+          </a>
+        </div>
+        
+
+      </div>
+    </div>
+
+
+  </div>
+
+</section>
+
+    <section class="form" id="kontakt">
+      <div class="form-wrapper">
+        <div class="vasak">
+          <div class="sisu">
+            <h3 data-i18n="cta-ready">Valmis rohkem päringuid saama? Küsi pakkumist</h3>
+            <p data-i18n="cta-read-sub">
+              Räägime sinu projektist ja leiame parima lahenduse just sinu
+              ärile.
+            </p>
+          </div>
+
+          <ul class="form-ikoonid">
+            <li class="form-kaardid">
+              <div class="vastus">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-clock-icon lucide-clock"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 6v6l4 2" />
+                </svg>
+                <p data-i18n="answer">Vastame 24h jooksul</p>
+              </div>
+            </li>
+            <li class="form-kaardid">
+              <div class="vastus">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-check-icon lucide-circle-check"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+                <p data-i18n="consult">Esmane konsultatsioon tasuta</p>
+              </div>
+            </li>
+
+            <li class="form-kaardid">
+              <div class="vastus">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-shield-check-icon lucide-shield-check"
+                >
+                  <path
+                    d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                  />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+                <p data-i18n="quote">Hinnapakkumine ilma kohustuseta</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="parem">
+          <form class="ankeet" id="contactForm" action="https://formspree.io/f/xwpbjbkz" method="POST">
+
+            <input type="hidden" name="_subject" value="Veebipäring kodulehelt">
+            <input type="text" name="_gotcha" style="display:none">
+            <input type="text" name="name" placeholder="Nimi" required data-i18n-placeholder="name" />
+            <input
+            data-i18n-placeholder="email"
+              type="email"
+              name="email"
+              placeholder="Sinu E-post"
+              required
+            />
+            <input type="tel" name="phone" placeholder="+372...." />
+            <input type="text" name="brand" placeholder="Valdkond" data-i18n-placeholder="field" />
+            <textarea
+            data-i18n-placeholder="message"
+              name="message"
+              rows="5"
+              placeholder="Kirjuta siia..."
+              required
+            ></textarea>
+            <button type="submit" data-i18n="send-message">Saada sõnum</button>
+          </form>
+        </div>
+
+         
+      </div>
+
+    </section>
+
+
+    <footer>
+      <div class="footer-cont">
+        <div class="footer-vasak">
+          <h3>
+            <img
+              src="pics/logo.png"
+              alt="KoodiOrav Logo"
+              width="50px"
+              height="50px"
+              loading="lazy"
+            />
+            Koodiorav
+          </h3>
+          <p data-i18n="footer-txt">Lihtsad ja toimivad veebilahendused.</p>
+        </div>
+
+        <div class="footer-parem">
+          <div class="lingi-div">
+            <h4 data-i18n="links">Lingid</h4>
+            <ul>
+              <li><a href="#lahendused" data-i18n="foot-solutions">Lahendused</a></li>
+              <li><a href="#valimeid" data-i18n="foot-worths">Väärtused</a></li>
+              <li><a href="#protsess" data-i18n="foot-proccess">Protsess</a></li>
+              <li><a href="#kontakt" data-i18n="foot-contact">Kontakt</a></li>
+            </ul>
+          </div>
+
+          <div class="info-div">
+            <h4 data-i18n="info">Info</h4>
+            <ul>
+              <li class="privacy">
+                <a href="#" onclick="openModal('privacyModal')"
+                  data-i18n="privacy" >Privaatsus</a
+                >
+              </li>
+              <li class="terms">
+                <a href="#" onclick="openModal('termsModal')" data-i18n="terms">Tingimused</a>
+              </li>
+              <li class="cook">
+                <a href="#" onclick="openModal('cookieModal')" data-i18n="cookies">Küpsised</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="sots-div">
+            <h4 data-i18n="social">Sotsiaalmeedia</h4>
+            <ul>
+              <li class="soc">
+                 <a href="https://www.facebook.com/profile.php?id=61578982811017"
+                  target="_blank"
+                  >Facebook</a
+                >
+              </li>
+              <li class="soc">
+                <a href="https://www.instagram.com/koodiorav/ " target="_blank"
+                  >Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="kontakt-div">
+            <h4 data-i18n="contact">Kontakt</h4>
+            <ul>
+              <li class="kontakt_kaardid">
+                <a href="tel:+37256882455">+372 5688 2455</a>
+              </li>
+
+              <li class="kontakt_kaardid" >
+                <a
+                  href="https://www.google.com/maps?q=Tartu,+Eesti"
+                  target="_blank"
+                  data-i18n="location">Tartu, Eesti</a
+                >
+              </li>
+
+              <li class="kontakt_kaardid">
+                <a href="mailto:info.koodiorav@gmail.com"
+                  >info.koodiorav@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-sub">
+          <p data-i18n="footer-sub">&copy; 2026 KoodiOrav. Kõik õigused kaitstud.</p>
+        </div>
+      </div>
+    </footer>
+
+    <div id="termsModal" class="modal">
+      <div class="box">
+        <span class="close" onclick="closeModal('termsModal')">&times;</span>
+        <h2 data-i18n="terms-box-title">Kasutustingimused</h2>
+
+        <p data-i18n="terms-box-sub">Seda veebilehte kasutades nõustud allolevate tingimustega.</p>
+
+        <p data-i18n="terms-box-sub-2">
+          Kogu sisu sellel lehel on informatiivne ning seda ei tohi kopeerida
+          ilma loata.
+        </p>
+
+        <p data-i18n="terms-box-sub-3">
+          Me ei vastuta kahjude eest, mis võivad tekkida selle veebilehe
+          kasutamisest.
+        </p>
+
+        <p data-i18n="terms-box-sub-4">Me võime muuta sisu ja tingimusi igal ajal ilma ette teatamata.</p>
+        <div class="nupud">
+          <button id="termsAccept" data-i18n="accept">Nõustu</button>
+          <button id="termsReject" class="reject" data-i18n="decline">Keeldu</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="privacyModal" class="modal">
+      <div class="box">
+        <span class="close" onclick="closeModal('privacyModal')">&times;</span>
+
+        <h2 data-i18n="privacy-policy-title">Privaatsuspoliitika</h2>
+
+        <p data-i18n="privacy-policy-sub">Me austame sinu privaatsust.</p>
+
+        <p data-i18n="privacy-policy-sub-2">
+          See veebileht ei kogu sinu isikuandmeid, välja arvatud juhul kui sa
+          ise need meile edastad (nt kontaktvormi kaudu).
+        </p>
+
+        <p data-i18n="privacy-policy-sub-3">
+          Kui sa saadad meile sõnumi, kasutatakse sinu andmeid ainult
+          vastamiseks ning neid ei jagata kolmandatele osapooltele.
+        </p>
+
+        <p data-i18n="privacy-policy-sub-4">Me ei kasuta jälgimistarkvara ega müü sinu andmeid.</p>
+        <div class="nupud">
+          <button id="privacyAccept" class="accept" data-i18n="accept">Nõustu</button>
+          <button id="privacyReject" class="reject" data-i18n="decline">Keeldu</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="cookieModal" class="cookie">
+      <div class="box">
+        <h2 data-i18n="cookie-box-title">Kasutame veebilehel küpsiseid</h2>
+        <hr />
+        <p data-i18n="cookie-box-sub">
+          Koodiorav kasutab oma veebilehel küpsiseid, et tagada veebilehe
+          toimivus, parandada selle jõudlust ning pakkuda sulle paremat
+          sirvimiskogemust.
+        </p>
+
+        <p data-i18n="cookie-box-sub-2">
+          Sa saad valida, milliste küpsiste kasutamiseks nõusoleku annad.
+          Vajalikud küpsised on alati aktiivsed, kuid valikuliste küpsiste
+          kasutamine toimub ainult sinu nõusolekul.
+        </p>
+
+        <div id="customText" class="hidden">
+          <p class="vajalik" data-i18n="cookie-box-nec">
+            <strong>Vajalikud küpsised:</strong>Hädavajalikud saidi toimimiseks
+            ja salvestatakse automaatselt. <em>Alati aktiivne</em>
+          </p>
+
+          <p class="valikuline" id="valikulineText" data-i18n="cookie-box-opt">
+            <strong>Valikulised küpsised:</strong> Analüüsivad saidi kasutust ja
+            aitavad pakkuda asjakohast sisu ning reklaame. Neid kasutame vaid
+            teie nõusolekul.
+          </p>
+          <label class="check">
+            <input type="checkbox" id="analytics" />
+            <span data-i18n="cookie-box-let">Luba analüütika küpsised</span>
+          </label>
+        </div>
+
+        <div class="nupud">
+          <button id="reject" data-i18n="decline">Keeldu</button>
+          <button id="custom" data-i18n="customize">Kohanda</button>
+          <button id="accept" data-i18n="accept">Nõustu kõigiga</button>
+        </div>
+      </div>
+    </div>
+
+<div id="messageOverlay" class="message-overlay"></div>
+
+<div id="messageBox" class="message-box">
+  <p id="messageText"></p>
+  <button type="button" class="back-btn" onclick="closeMessage()">Sulge</button>
+</div>
+ 
+
+    <script
+      data-consent="analytics"
+      src="https://www.google-analytics.com/analytics.js"
+      defer
+    ></script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Koodiorav",
+  "url": "https://koodiorav.ee",
+  "logo": "https://koodiorav.ee/pics/logo.png"
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
