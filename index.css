@@ -1135,8 +1135,8 @@ button {
 
 .cookie,
 .modal {
-  align-items: center;
-  padding: 16px;
+  align-items: flex-start;
+  padding: max(16px, env(safe-area-inset-top)) 16px 16px;
 }
 
 .box {
