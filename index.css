@@ -17,14 +17,23 @@
 /*body*/
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 body {
+  min-width: 0;
+  overflow-x: hidden;
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   background-image: url(pics/bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /*nav*/
@@ -418,6 +427,12 @@ body {
   margin-top: 10px;
   font-size: 16px;
   opacity: 0.9;
+}
+
+.app-slide img {
+  width: 55%;
+  margin: auto;
+  object-fit: contain;
 }
 
 /*ValiMeid*/
@@ -901,10 +916,289 @@ button {
   margin-top: 20px;
 }
 
-@media (min-width: 500px) {
+/* Responsive layout */
+.navbar {
+  min-height: 72px;
+  padding: 12px clamp(16px, 4vw, 42px);
+}
+
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px;
+  min-width: 0;
+}
+
+.logo a {
+  padding: 0;
+  font-size: clamp(0.72rem, 1.6vw, 0.9rem);
+}
+
+.langbtn {
+  min-height: 44px;
+  margin: 0;
+  padding: 8px;
+}
+
+.burger {
+  width: 44px;
+  min-width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  align-items: center;
+  justify-content: center;
+}
+
+.burger:focus-visible,
+.nav-links a:focus-visible,
+.close:focus-visible,
+.hero-cta-btn:focus-visible {
+  outline: 3px solid var(--color-span);
+  outline-offset: 3px;
+}
+
+.burger .line {
+  display: block;
+}
+
+.hero-cont {
+  width: min(800px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.hero-cont img {
+  margin-inline: auto;
+}
+
+.hero-title {
+  font-size: clamp(1.75rem, 5vw, 2.6rem);
+  overflow-wrap: anywhere;
+}
+
+.hero-subtxt {
+  padding-inline: 0;
+  font-size: clamp(0.94rem, 2.7vw, 1.05rem);
+}
+
+.lahendused-cont {
+  padding: clamp(96px, 15vw, 200px) 16px 0;
+}
+
+.lahendused-title,
+.lisa-cont h2 {
+  font-size: clamp(1.7rem, 5vw, 2rem);
+}
+
+.lahendused-kaart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17.5rem), 1fr));
+  width: min(1100px, 100%);
+  margin: 40px auto 0;
+}
+
+.lahendused-kaart {
+  width: 100%;
+  min-width: 0;
+  padding: clamp(22px, 5vw, 30px);
+  border-radius: clamp(24px, 8vw, 50px);
+}
+
+.lisa-cont {
+  margin-top: clamp(64px, 10vw, 8rem);
+  padding: clamp(56px, 10vw, 80px) 16px;
+}
+
+.lisa-cont h2 {
+  margin-bottom: clamp(2.5rem, 8vw, 4rem);
+}
+
+.lisa-kaart-cont {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15.625rem), 1fr));
+  gap: clamp(28px, 6vw, 50px);
+}
+
+.projektid {
+  padding: 0 16px;
+}
+
+.projekti-grid {
+  width: min(1100px, 100%);
+}
+
+.slider {
+  width: 100%;
+  height: clamp(220px, 54vw, 400px);
+  margin: 0 auto;
+}
+
+.slide {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.app-slide img {
+  flex: 0 1 30%;
+  width: 30%;
+  max-width: calc((100% - 2rem) / 3);
+  min-width: 0;
+  height: 100%;
+  margin: 0;
+  object-fit: contain;
+}
+
+.app-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.5rem, 2vw, 1.5rem);
+  padding: clamp(1rem, 4vw, 2rem);
+  background: rgba(15, 23, 42, 0.35);
+}
+
+.overlay {
+  padding: clamp(16px, 5vw, 40px);
+}
+
+.overlay h3 {
+  font-size: clamp(1.25rem, 4vw, 1.75rem);
+}
+
+.overlay span {
+  font-size: clamp(0.9rem, 2.8vw, 1rem);
+}
+
+.valimeid {
+  margin-top: clamp(64px, 10vw, 8rem);
+}
+
+.valimeid-wrapper {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  width: min(1100px, 100%);
+  margin-inline: auto;
+  padding: clamp(24px, 5vw, 40px) 16px;
+}
+
+.protsess {
+  width: min(1100px, calc(100% - 2rem));
+  margin-inline: auto;
+  padding: clamp(40px, 7vw, 50px) 0;
+}
+
+.protsess-wrapper {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13.75rem), 1fr));
+  padding: clamp(24px, 5vw, 40px) 16px;
+}
+
+.form {
+  padding: clamp(48px, 10vw, 96px) 16px 0;
+}
+
+.form-wrapper {
+  width: min(1100px, 100%);
+}
+
+.parem {
+  padding: clamp(20px, 5vw, 30px);
+}
+
+.footer-cont {
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 2fr);
+  gap: 24px;
+  padding: 24px clamp(16px, 4vw, 30px);
+}
+
+.footer-vasak h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+}
+
+.footer-vasak p {
+  overflow-wrap: anywhere;
+}
+
+.footer-parem {
+  gap: 20px;
+  padding: 0;
+}
+
+.cookie,
+.modal {
+  align-items: center;
+  padding: 16px;
+}
+
+.box {
+  width: min(100%, 700px);
+  max-height: calc(100dvh - 32px);
+}
+
+@media (max-width: 799px) {
+  .nav-links {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    width: min(22rem, calc(100vw - 24px));
+    height: auto;
+    min-height: 320px;
+    padding: 64px 24px 24px;
+    gap: 24px;
+  }
+
+  .nav-links .close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--color-secondary);
+    line-height: 1;
+  }
+
+  .nav-links a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .ankeet {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .ankeet textarea,
+  .ankeet button,
+  .ankeet label:has(textarea) {
+    grid-column: span 1;
+  }
+
+  .footer-cont {
+    grid-template-columns: 1fr;
+  }
+
   .footer-parem {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 9.5rem), 1fr));
+  }
+
+  .footer-sub {
+    grid-column: span 1;
+    font-size: 1rem;
   }
 }
 
@@ -912,64 +1206,84 @@ button {
   .form-ikoonid {
     flex-direction: row;
   }
-  .slider {
-    width: 100%;
-    height: 350px;
-  }
 
-  .swiper-slide {
-    aspect-ratio: 16 / 7;
-    width: 100%;
-    border-radius: 20px;
-    overflow: hidden;
-    color: var(--color-light);
-    position: relative;
+  .footer-parem {
+    grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
   }
 }
 
 @media (min-width: 800px) {
-  .burger {
-    display: none;
-  }
-  .close,
+  .burger,
+  .nav-links .close,
   .social {
     display: none;
   }
+
   .nav-links {
-    background-color: rgba(255, 255, 255, 0);
-    border: none;
-    height: 0px;
-    border-radius: 16px;
-    z-index: 999;
+    position: static;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding: 20px;
-    width: 0px;
-    letter-spacing: 1px;
-    align-items: center;
-    gap: 28px;
+    width: auto;
+    height: auto;
+    padding: 0;
+    gap: clamp(14px, 2.5vw, 28px);
+    border: 0;
+    background: transparent;
+    box-shadow: none;
   }
+
   .nav-links a:hover {
     text-decoration: underline;
   }
 }
 
-@media (min-width: 1024px) {
-  .slider {
-    margin: 20px auto;
-    width: 50%;
-    height: 100%;
+@media (max-width: 420px) {
+  .navbar {
+    align-items: flex-start;
+  }
+
+  .logo {
+    max-width: calc(100% - 52px);
+  }
+
+  .hero-cta,
+  .hero-cta-btn {
+    width: 100%;
+  }
+
+  .hero-cta-btn {
+    text-align: center;
+  }
+
+  .title-svg {
+    gap: 12px;
+  }
+
+  .title-svg svg {
+    flex: 0 0 30px;
+  }
+
+  .lahendused-kaart ul li {
+    align-items: flex-start;
+  }
+
+  .lahendused-kaart ul li svg {
+    flex: 0 0 25px;
+    margin-top: 2px;
   }
 }
 
-@media (max-width: 768px) {
-  .ankeet {
-    max-width: 1100px;
-    grid-template-columns: 1fr;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
-  .ankeet textarea,
-  .ankeet button {
-    grid-column: span 1;
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
   }
 }

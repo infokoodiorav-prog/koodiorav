@@ -4,11 +4,19 @@ const closeBtn = document.querySelector(".close");
 
 if (burger && nav) {
   burger.addEventListener("click", () => {
-    nav.classList.toggle("active");
+    const isOpen = nav.classList.toggle("active");
+    burger.setAttribute("aria-expanded", String(isOpen));
   });
 
-  closeBtn.addEventListener("click", () => {
+  const closeNavigation = () => {
     nav.classList.remove("active");
+    burger.setAttribute("aria-expanded", "false");
+  };
+
+  if (closeBtn) closeBtn.addEventListener("click", closeNavigation);
+
+  nav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeNavigation);
   });
 
   document.addEventListener("click", (e) => {
@@ -16,13 +24,17 @@ if (burger && nav) {
     const clickedBurger = burger.contains(e.target);
 
     if (!clickedInsideNav && !clickedBurger) {
-      nav.classList.remove("active");
+      closeNavigation();
     }
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeNavigation();
   });
 
   window.addEventListener("resize", () => {
     if (window.innerWidth >= 800) {
-      nav.classList.remove("active");
+      closeNavigation();
     }
   });
 }

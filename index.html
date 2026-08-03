@@ -38,13 +38,13 @@ content="Kaasaegsed ja kiired kodulehed ettevõtetele, startupidele ja kasvavate
         <button class="langbtn" onclick="setLanguage('et')">EST</button>
 <button class="langbtn" onclick="setLanguage('en')">ENG</button>
 </div>
-      <div class="burger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-        <nav class="nav-links">
-          <p class="close">X</p>
+      <button class="burger" type="button" aria-label="Ava menüü" aria-controls="primary-navigation" aria-expanded="false">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+        <nav class="nav-links" id="primary-navigation">
+          <button class="close" type="button" aria-label="Sulge menüü">&times;</button>
             <a href="#lahendused" data-i18n="solutions">Lahendused</a>
             <a href="#valimeid"  data-i18n="worths">Väärtused</a>
             <a href="#protsess" data-i18n="process">Protsess</a>
@@ -542,17 +542,19 @@ content="Kaasaegsed ja kiired kodulehed ettevõtetele, startupidele ja kasvavate
         </div>
 
         <div class="swiper-slide">
-            <a href="https://infokoodiorav-prog.github.io/VormX/" target="_blank" class="slide">
-          <img src="pics/pesula.png" />
+  <a href="#" target="_blank" class="slide app-slide">
 
-          <div class="overlay">
-      <h3>KülaPesula — Broneerimis- ja e-poe süsteem</h3>
-      <p>UI · Kampaania · Lead generation</p>
-      <span>Ava leht ↗</span>
+    <img src="pics/trackerio.png" alt="Trackerio mobiilirakendus">
+    <img src="pics/toitumine.png" alt="Trackerio mobiilirakendus">
+    <img src="pics/harjutused.png" alt="Trackerio mobiilirakendus">
+    <div class="overlay">
+      <h3>Trackerio</h3>
+      <p>Mobiilirakendus</p>
+      <span>Vaata rakendust ↗</span>
     </div>
 
-          </a>
-        </div>
+  </a>
+</div>
 
          <div class="swiper-slide">
             <a href="https://infokoodiorav-prog.github.io/TextileService/" target="_blank" class="slide">
